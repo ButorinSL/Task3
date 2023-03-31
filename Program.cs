@@ -19,8 +19,14 @@ internal class Program
         int numberA = Convert.ToInt32(valueA); // переводим введеное значение в числовой режим
 
         int ostatok = numberA % 2;
-
-        Console.WriteLine (ostatok);
+        if (ostatok == 0)
+        {
+            Console.WriteLine ("Введеное число четное");
+        }
+        else
+        {
+            Console.WriteLine ("Введеное число НЕчетное");
+        }
     }
 
 }        
